@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Artist Portfolio</title>
+
+<style>
+body {
+    background-color: lightblue;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: darkblue;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid #444;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+</style>
+
+<h1>My Artist Portfolio</h1>
+<p>Creative Art by Sanskruti</p>
+
+<h2>About Me</h2>
+<p>I am an artist who loves painting, sketching, and creating creative artworks.<br>
+Art helps me express my ideas and emotions. I enjoy experimenting <br>
+with different colors and styles to make unique paintings.</p>
+
+<h2>My Art Gallery</h2>
+<img src="https://www.bing.com/images/search?view=detailV2&ccid=kXbnbHdj&id=AE3D036FB89A46E0B7B355D295366EDFC7473C82&thid=OIP.kXbnbHdjpe2aUti3hEOktQHaFF&mediaurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.9176e76c7763a5ed9a52d8b78443a4b5%3Frik%3DgjxHx99uNpXSVQ%26riu%3Dhttp%253a%252f%252fwebneel.com%252fdaily%252fsites%252fdefault%252ffiles%252fimages%252fdaily%252f10-2018%252f17-nature-scenery-oil-painting-trees-arteet.jpg%26ehk%3DxPaHwfiBhkKolOjjJk6tgxlxClwRzqOUG4fF2xKN4ic%253d%26risl%3D%26pid%3DImgRaw%26r%3D0&exph=892&expw=1300&q=nature+artwork&form=IRPRST&ck=4CA7566702259A87B96ABC688D1FBF8B&selectedindex=4&itb=0&cw=1375&ch=659&ajaxhist=0&ajaxserp=0&vt=0&sim=11">
+<img src="https://i.pinimg.com/originals/c2/f8/f4/c2f8f4c00afab9bccaa9d818897c6dad.jpg">
+<img src="https://images.freecreatives.com/wp-content/uploads/2015/06/charming-landscape-painting.jpeg">
+
+<h2>Contact</h2>
+<a href="contact.html">Go to Contact Page</a>
+<p>Email: sanskrutipadul01@email.com</p>
+
+<p>© 2026 My Portfolio</p>
+
+<script>
+function submitForm() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    
+    if(name == "" || email == "") {
+        alert("Please fill all fields!");
+    } else {
+        alert("Thank you " + name + "! Your message has been sent.");
+    }
+}
+</script>
+
+</head>
+
+<body bgcolor="lightblue" align="center">
+
+<h1>Contact Me</h1>
+
+<form>
+    <label>Name:</label><br>
+    <input type="text" id="name"><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" id="email"><br><br>
+
+    <label>Message:</label><br>
+    <textarea id="message"></textarea><br><br>
+
+    <button type="button" onclick="submitForm()">Submit</button>
+</form>
+
+<br>
+<a href="index.html">Back to Home</a>
+
+</body>
+</html>
